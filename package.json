@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-plugin-shopify",
+  "description": "Shopify Storefront GraphQL Plugin for Gatsby",
+  "main": "gatsby-node.js",
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "babel-runtime": "^6.26.0",
+    "graphql-client": "^2.0.0"
+  },
+  "author": {
+    "name": "Jeremy Swanborough",
+    "email": "mail@jeremyswann.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyswann/gatsby-plugin-shopify/issues"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "cross-env": "^5.0.5"
+  },
+  "homepage": "https://github.com/jeremyswann/gatsby-plugin-shopify",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "shopify",
+    "graphql",
+    "api",
+    "storefront"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyswann/gatsby-plugin-shopify.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir .",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir ."
+  },
+  "version": "1.0.0"
+}
